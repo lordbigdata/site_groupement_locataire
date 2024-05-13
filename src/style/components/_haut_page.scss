@@ -4,6 +4,7 @@
 .haut_page {
 
     position : fixed;
+
     top: 0px;
     z-index: 1;
 
@@ -13,21 +14,24 @@
     width: 80%;
 
     &__image {
+        display: block;
+        margin: auto;
+        // width: 30%;
 
-        @include mixin.small {
-            padding-left:30%;
+        // @include mixin.small {
+        //     padding-left:30%;
 
-          }
+        //   }
     
-        @include mixin.medium {
-            padding-left: 43%;
+        // @include mixin.medium {
+        //     padding-left: 43%;
 
-          }
+        //   }
     
-          @include mixin.big {
-            padding-left: 45%;
+        //   @include mixin.big {
+        //     padding-left: 45%;
 
-          }
+        //   }
     
         }
 
