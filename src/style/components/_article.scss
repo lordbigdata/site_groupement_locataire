@@ -1,0 +1,75 @@
+
+.article {
+    display: flex;
+    flex-wrap: nowrap ;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    justify-content: center ;
+    width: 80% ;
+    margin: 0rem 10% 0rem 10%;
+    padding-top: 10%;
+
+    &__titre {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center ;
+        font-weight:bold  ;
+        &__detail {
+            padding : 0px 5px;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: left;
+        
+        &__text {
+            width: 65% ;
+            padding: 2% 10%;
+       }
+       &__rubrique {
+        width: 80% ;
+        padding: 2% 2%;
+        }
+       &__image {
+             width: 25% ;
+    
+        }
+    }
+    &__footer {
+        text-align: left;
+    
+    }
+}
+
+
+.image_accueil {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   align-items: center;
+   margin: 0px 30px;
+}
+
+.fleche_accueil {
+    max-width: 10%;
+    width: 10%;
+    animation-duration: 1s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+}
+
+@keyframes clignoter {
+
+    0% {opacity:1;}
+    40% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
+
+
+
+

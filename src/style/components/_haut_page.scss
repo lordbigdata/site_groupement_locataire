@@ -1,0 +1,14 @@
+@use '../vars' ;
+
+.haut_page {
+    position : fixed;
+    top: 0px;
+    width: 80%;
+    z-index: 1;
+    margin: 0rem 10% 1rem 10%;
+    border-bottom: 3px solid #d40000ff;
+    background-color: white;
+    &__image {
+        padding-left: 43%;
+        }
+}

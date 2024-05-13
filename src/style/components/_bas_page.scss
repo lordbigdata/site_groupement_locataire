@@ -1,0 +1,21 @@
+@use '../vars' ;
+
+.bas_page {
+    position : fixed;
+    bottom: 0px;
+    width: 80%;
+    z-index: 1;
+    display : flex ;
+    justify-content: space-around;
+    margin: 1rem 10% 0rem 10%;
+    border-top: 3px solid #d40000ff;
+    background-color: white;
+}
+
+.lien {
+    padding : 1rem 1rem;
+    color:  #d40000ff;
+    text-decoration: none;
+    cursor: pointer;
+
+}

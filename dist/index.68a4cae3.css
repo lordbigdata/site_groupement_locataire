@@ -38,7 +38,130 @@ table {
 }
 
 body {
-  text-align: center;
   color: #d40000;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #d40000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.haut_page {
+  z-index: 1;
+  background-color: #fff;
+  border-bottom: 3px solid #d40000;
+  width: 80%;
+  margin: 0 10% 1rem;
+  position: fixed;
+  top: 0;
+}
+
+.haut_page__image {
+  padding-left: 43%;
+}
+
+.article {
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 10%;
+  padding-top: 10%;
+  display: flex;
+}
+
+.article__titre {
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: bold;
+  display: flex;
+}
+
+.article__titre__detail {
+  padding: 0 5px;
+}
+
+.article__content {
+  text-align: left;
+  flex-flow: row;
+  justify-content: space-between;
+  display: flex;
+}
+
+.article__content__text {
+  width: 65%;
+  padding: 2% 10%;
+}
+
+.article__content__rubrique {
+  width: 80%;
+  padding: 2%;
+}
+
+.article__content__image {
+  width: 25%;
+}
+
+.article__footer {
+  text-align: left;
+}
+
+.image_accueil {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px;
+  display: flex;
+  position: relative;
+}
+
+.fleche_accueil {
+  width: 10%;
+  max-width: 10%;
+  animation-name: clignoter;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes clignoter {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.bas_page {
+  z-index: 1;
+  background-color: #fff;
+  border-top: 3px solid #d40000;
+  justify-content: space-around;
+  width: 80%;
+  margin: 1rem 10% 0;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+
+.lien {
+  color: #d40000;
+  cursor: pointer;
+  padding: 1rem;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.68a4cae3.css.map */
