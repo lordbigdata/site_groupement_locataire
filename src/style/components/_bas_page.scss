@@ -8,13 +8,13 @@
     display : flex ;
     justify-content: space-around;
     margin: 1rem 10% 0rem 10%;
-    border-top: 3px solid #d40000ff;
-    background-color: white;
+    border-top: 3px solid vars.$text-color;
+    background-color: vars.$background-color;
 }
 
 .lien {
     padding : 1rem 1rem;
-    color:  #d40000ff;
+    color: vars.$text-color;
     text-decoration: none;
     cursor: pointer;
 

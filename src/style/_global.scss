@@ -1,7 +1,7 @@
 @use './vars' ;
 
 body {
-    color: #d40000 ;
+    color: vars.$text-color;
     font-size: 1.5rem;
     margin: 0px 0px;
 }
@@ -11,7 +11,7 @@ img {
 
 }
 
-a {   color: #d40000 ;
+a {   color: vars.$text-color ;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
