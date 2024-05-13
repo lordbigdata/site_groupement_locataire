@@ -1,5 +1,6 @@
 @use 'reset-css';
 
+@use './mixin.scss';
 @use './global.scss';
 @use './components/haut_page.scss';
 @use './components/article.scss';
