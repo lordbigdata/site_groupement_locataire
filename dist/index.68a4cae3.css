@@ -105,6 +105,7 @@ a:hover {
   text-align: center;
   flex-flow: column;
   justify-content: center;
+  line-height: 2rem;
   display: flex;
 }
 
@@ -127,13 +128,13 @@ a:hover {
 }
 
 .article__content__text {
-  width: 55%;
-  padding: 2% 5%;
+  width: 70%;
+  padding: 1% 5%;
 }
 
 .article__content__rubrique {
-  width: 80%;
-  padding: 2%;
+  width: 90%;
+  padding: 2% 5%;
 }
 
 .article__content__image {
@@ -194,6 +195,10 @@ a:hover {
   100% {
     opacity: 1;
   }
+}
+
+.highlight:hover {
+  background-color: #ecc5c5;
 }
 
 .bas_page {

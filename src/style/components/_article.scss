@@ -8,6 +8,7 @@
     justify-content: space-evenly;
     text-align: center;
     justify-content: center ;
+    line-height: 2rem ;
 
 
     &__titre {
@@ -27,12 +28,12 @@
         text-align: left;
         
         &__text {
-            width: 55% ;
-            padding: 2% 5%;
+            width: 70% ;
+            padding: 1% 5%;
        }
        &__rubrique {
-        width: 80% ;
-        padding: 2% 2%;
+        width: 90% ;
+        padding: 2% 5%;
         }
        &__image {
             margin-top: 1%;
@@ -90,5 +91,8 @@
 }
 
 
+.highlight:hover {
+    background-color: #ecc5c5;
 
+}
 
