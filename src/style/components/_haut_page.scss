@@ -1,14 +1,46 @@
 @use '../vars' ;
+@use '../mixin' ;
 
 .haut_page {
+
     position : fixed;
     top: 0px;
-    width: 80%;
     z-index: 1;
-    margin: 0rem 10% 1rem 10%;
+
     border-bottom: 3px solid vars.$text-color;
     background-color: vars.$background-color;
+
+    width: 80%;
+
     &__image {
-        padding-left: 43%;
+
+        @include mixin.small {
+            padding-left:30%;
+
+          }
+    
+        @include mixin.medium {
+            padding-left: 43%;
+
+          }
+    
+          @include mixin.big {
+            padding-left: 45%;
+
+          }
+    
         }
+
+        
+    @include mixin.small {
+        margin: 0rem 10% 1rem 10%;
+      }
+
+    @include mixin.medium {
+        margin: 0rem 10% 1rem 10%;
+      }
+
+      @include mixin.big {
+        margin: 0rem 10% 1rem 10%;
+      }
 }

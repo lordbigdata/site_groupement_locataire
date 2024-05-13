@@ -1,3 +1,5 @@
+@use '../vars' ;
+@use '../mixin' ;
 
 .article {
     display: flex;
@@ -6,9 +8,7 @@
     justify-content: space-evenly;
     text-align: center;
     justify-content: center ;
-    width: 80% ;
-    margin: 0rem 10% 0rem 10%;
-    padding-top: 10%;
+
 
     &__titre {
         display: flex;
@@ -22,20 +22,22 @@
     &__content {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-between;
         text-align: left;
         
         &__text {
-            width: 65% ;
-            padding: 2% 10%;
+            width: 55% ;
+            padding: 2% 5%;
        }
        &__rubrique {
         width: 80% ;
         padding: 2% 2%;
         }
        &__image {
-             width: 25% ;
+            margin-top: 1%;
+            margin-right: 10%;
+             width: 10% ;
     
         }
     }
@@ -43,6 +45,23 @@
         text-align: left;
     
     }
+
+    @include mixin.small {
+        // width: 100% ;
+        margin: 0rem 10% 0rem 10%;
+        padding-top: 35%;
+      }
+
+    @include mixin.medium {
+        // width: 80% ;
+        margin: 0rem 10% 0rem 10%;
+      }
+
+      @include mixin.big {
+        // width: 80% ;
+        margin: 0rem 10% 0rem 10%;
+        padding-top: 10%;
+      }
 }
 
 

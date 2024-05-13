@@ -61,22 +61,50 @@ a:hover {
   background-color: #fff;
   border-bottom: 3px solid #d40000;
   width: 80%;
-  margin: 0 10% 1rem;
   position: fixed;
   top: 0;
 }
 
-.haut_page__image {
-  padding-left: 43%;
+@media screen and (width <= 480px) {
+  .haut_page__image {
+    padding-left: 30%;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .haut_page__image {
+    padding-left: 43%;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .haut_page__image {
+    padding-left: 45%;
+  }
+}
+
+@media screen and (width <= 480px) {
+  .haut_page {
+    margin: 0 10% 1rem;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .haut_page {
+    margin: 0 10% 1rem;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .haut_page {
+    margin: 0 10% 1rem;
+  }
 }
 
 .article {
   text-align: center;
   flex-flow: column;
   justify-content: center;
-  width: 80%;
-  margin: 0 10%;
-  padding-top: 10%;
   display: flex;
 }
 
@@ -93,14 +121,14 @@ a:hover {
 
 .article__content {
   text-align: left;
-  flex-flow: row;
+  flex-flow: wrap;
   justify-content: space-between;
   display: flex;
 }
 
 .article__content__text {
-  width: 65%;
-  padding: 2% 10%;
+  width: 55%;
+  padding: 2% 5%;
 }
 
 .article__content__rubrique {
@@ -109,11 +137,33 @@ a:hover {
 }
 
 .article__content__image {
-  width: 25%;
+  width: 10%;
+  margin-top: 1%;
+  margin-right: 10%;
 }
 
 .article__footer {
   text-align: left;
+}
+
+@media screen and (width <= 480px) {
+  .article {
+    margin: 0 10%;
+    padding-top: 35%;
+  }
+}
+
+@media screen and (width >= 768px) {
+  .article {
+    margin: 0 10%;
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .article {
+    margin: 0 10%;
+    padding-top: 10%;
+  }
 }
 
 .image_accueil {
@@ -158,7 +208,7 @@ a:hover {
   bottom: 0;
 }
 
-.lien {
+.bas_page__lien {
   color: #d40000;
   cursor: pointer;
   padding: 1rem;
