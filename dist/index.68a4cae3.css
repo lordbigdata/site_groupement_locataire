@@ -157,6 +157,7 @@ a:hover {
 .image_accueil {
   flex-direction: column;
   align-items: center;
+  height: 70%;
   margin: 0 30px;
   display: flex;
   position: relative;
